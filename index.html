@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML() , start()" >
+
+    <div w3-include-html="templates/header.html"></div>
+    
+    <!-- first section -->
+    <section>
+        <div class="start-recipe">
+            <a href="paella.html"><img src="img/paella.jpg" alt=""></a>
+            <div>
+                <h2>Paella mit Meeresfrüchten</h2>
+                <p>Unsere klassische Paella mit Meeresfrüchten und frischem Gemüse ist ein intensiv aromatisches
+                    Reisgericht mit Tradition und eine herzhafte spanische Spezialität, die zu jeder Gelegenheit
+                    kulinarisch überzeugt. Probieren Sie selbst!</p>
+                <a href="paella.html"><button class="btn-open">Rezept öffnen</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- second section -->
+
+    <div class="recipes">
+        <h2 class="h2-center">Lust auf was Neues?</h2>
+        <div class="recipes-img">
+            <div class="img-food">
+                <a href="lasagne.html">
+                    <div class="overflow"><img src="img/lasagne.jpg" alt="" ></div></a>
+                <span><b>Lasagne Hackfleisch</b></span>
+            </div>
+            <div class="img-food">
+                <a href="pancakes.html"> <div class="overflow"><img src="img/pancakes.jpg" alt=""></div></a>
+                <span><b>Japanische Pancakes</b></span>
+            </div>
+            <div class="img-food">
+                <a href="paella.html"> <div class="overflow"><img src="img/paella.jpg" alt=""></div></a>
+                <span><b>Paella mit Meeresfrüchten</b></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- third section -->
+    <section>
+        <h2 class="h2-center">Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="wok-pfanne">
+            <p>Pfannen und Woks haben jeweils ihre eigenen Vor- und Nachteile. Eine Pfanne ist ideal zum Braten von
+                flachen Lebensmitteln wie Fleisch, Fisch oder Eiern geeignet. Sie kann auch zum Schmoren oder Anbraten
+                verwendet werden. Eine Pfanne kann in verschiedenen Größen und Materialien hergestellt werden, wodurch
+                sie sehr vielseitig ist. Edelstahlpfannen sind langlebig und einfach zu reinigen, während
+                Gusseisenpfannen eine hervorragende Wärmeverteilung bieten. Eine beschichtete Pfanne benötigt weniger Öl
+                oder Fett zum Braten und verhindert ein Anhaften von Lebensmitteln, jedoch kann die Beschichtung
+                beschädigt werden und muss ersetzt werden.
+                <br>
+                <br>
+                Ein Wok hingegen eignet sich besser zum Wokken, das schnelle Braten von Lebensmitteln auf hoher Hitze.
+                Woks haben höhere Wände und sind ideal zum Rühren und Schwenken von Lebensmitteln, was zu einer
+                gleichmäßigen Garung führt. Ein weiterer Vorteil des Woks ist, dass er in der Regel eine
+                Antihaftbeschichtung hat und daher weniger Fett benötigt wird. Im Vergleich zur Pfanne hat ein Wok auch
+                eine größere Kapazität, was ihn perfekt für das Zubereiten von Mahlzeiten für mehrere Personen macht. Es
+                gibt auch elektrische Woks, die besonders praktisch sind, wenn man nicht über einen Gasherd verfügt.
+                <br>
+                <br>
+                Letztendlich hängt es jedoch von Ihren individuellen Vorlieben und Kochbedürfnissen ab, welches Gerät
+                besser geeignet ist. Wenn Sie regelmäßig asiatische Gerichte zubereiten oder gerne in großen Mengen
+                kochen, dann ist ein Wok definitiv eine sinnvolle Investition. Wenn Sie jedoch eher klassische Gerichte
+                wie Schnitzel oder Omeletts bevorzugen und eine Pfanne bereits besitzen, dann ist es möglicherweise
+                nicht notwendig, einen Wok zu kaufen. Beide Küchengeräte haben ihre Vorzüge und Nachteile und die
+                Entscheidung hängt von Ihrem persönlichen Geschmack und Ihrem Kochstil ab.</p>
+            <img class="wok-pfanne-img" src="img/wok.jpg" id="wok-img">
+        </div>
+    </section>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

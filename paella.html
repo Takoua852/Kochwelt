@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paella Rezept</title>
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="paella-rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="includeHTML(), CreateTable()">
+
+    <div w3-include-html="templates/header.html"></div>
+
+
+    <!-- First Section -->
+    <section>
+
+        <h1 class="headline">Paella mit Meeresfrüchten</h1>
+        <img class="start-img" src="img/paella.jpg" alt="">
+
+
+        <div class="labels">
+            <label class="bg-label"><img src="img/icons/clock-regular.svg" alt="" width="10">
+                30 Min.</label>
+            <label class="bg-label"><img src="img/icons/brain-solid.svg" alt="" width="10">
+                simpel</label>
+            <label class="bg-label"> <img src="img/icons/calendar-alt-regular.svg" alt="" width="10">
+                24.03.2023</label>
+        </div>
+
+    </section>
+
+
+    <!-- second Section -->
+    <section>
+        <hr>
+        <div class="portion-input">
+            <label class="ing-label">Zutaten für </label>
+            <input class="portion" type="number" min="1" max="20" id="input-portion" placeholder="4">
+            <button onclick=" calc() ">Portionen</button>
+        </div>
+        <br>
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+
+
+    </section>
+
+    <!-- Third Section  -->
+    <section>
+        <h2 class="h2-prep">Zubereitung</h2>
+        <div class="labels">
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                ca. 30 Minuten
+            </div>
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                Gesamtzeit ca. 55 Minuten
+            </div>
+        </div>
+        <p>3 EL Olivenöl erhitzen, Zwiebeln und die Hälfte des kleingehackten Knoblauchs glasig dünsten. Den Reis
+            hinzufügen, kurz andünsten. Mit der Brühe
+            auffüllen, zum Kochen bringen und unter Rühren garen.
+
+            In einer separaten Pfanne 3 EL Olivenöl erhitzen. Nun die Meeresfrüchte, die in Streifen geschnittene
+            Paprika, die grüne Bohnen und den restlichen Knoblauch kurz anbraten und zu dem Reis geben. Alles so lange
+            köcheln, bis die Brühe weitestgehend verkocht ist. Mit Paprika, Pfeffer und Meersalz abschmecken.</p>
+
+        <h3>Rezept erstellt von</h3>
+        <div class="chef">
+            <img class="profile-img" src="img/profil-bild.jpg" alt="">
+            <span class="chef-name">TAKOUA</span>
+        </div>
+    </section>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+
+</html>

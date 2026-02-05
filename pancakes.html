@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanische Pancakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo_small.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="pancakes-rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML(), CreateTable()">
+    <div w3-include-html="templates/header.html"></div>
+    <!-- First Section -->
+    <section>
+
+        <h1 class="headline">Japanische Pancakes</h1>
+        <img class="start-img" src="img/pancakes.jpg" alt="">
+
+
+        <div class="labels">
+            <label class="bg-label"><img src="img/icons/clock-regular.svg" alt="" width="10">
+                25 Min.</label>
+            <label class="bg-label"><img src="img/icons/brain-solid.svg" alt="" width="10">
+                Mittel</label>
+            <label class="bg-label"> <img src="img/icons/calendar-alt-regular.svg" alt="" width="10">
+                23.03.2023</label>
+        </div>
+
+    </section>
+
+
+    <!-- second Section -->
+    <section>
+        <hr>
+        <div class="portion-input">
+            <label class="ing-label">Zutaten für </label>
+            <input class="portion" type="number" min="1" max="20" id="input-portion" placeholder="4">
+            <button onclick="calc()">Portionen</button>
+        </div>
+        <br>
+
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+
+
+    </section>
+
+    <!-- Third Section  -->
+    <section>
+        <h2 class="h2-prep">Zubereitung</h2>
+        <div class="labels">
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                ca. 20 Minuten
+            </div>
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                Gesamtzeit ca. 20 Minuten
+            </div>
+        </div>
+        <p>
+            Pfanne mit passendem Deckel bereitstellen. Milch, Öl und Zitronenabrieb oder Vanilleextrakt in einer
+            Schüssel verrühren. Eier trennen. Eigelbe unter die Milch-Öl-Mischung rühren. Mehl hinzugeben und mit einem
+            Rührbesen klumpenfrei rühren.
+            <br>
+            <br>
+            Eiweiße mit dem Rührbesenaufsatz eines Handrührgeräts steif schlagen, dabei Zucker und Salz einrieseln
+            lassen. So lange auf höchster Stufe schlagen, bis ein fester, stabiler Eischnee entstanden ist. Eischnee in
+            zwei bis drei Portionen mit einem Teigschaber vorsichtig unter den Teig heben. Der Teig muss direkt
+            weiterverarbeitet werden.
+            <br>
+            <br>
+            
+            Pfanne über niedriger Flamme erhitzen, ein wenig Öl hinzugeben und mit einem Pinsel oder Küchenpapier
+            verteilen. Zwei bis drei ca. 5 cm große Teigportionen mit Hilfe eines Eisportionieres oder eines
+            Spritzbeutels in die Pfanne geben, dabei Abstand zwischen den Pancakes lassen. Deckel auf die Pfanne setzen
+            und 3-4 Minuten bei niedriger Hitze garen lassen.
+            <br>
+            <br>
+            Deckel entfernen, Pancakes vorsichtig mit einem dünnen Pfannenwender wenden. Deckel erneut aufsetzen und für
+            weitere 2-3 Minuten fertig backen. Vorgang wiederholen, bis der Teig aufgebraucht ist. Japanische Pancakes
+            auf einen Teller anrichten und beliebig mit Beeren, Ahornsirup, und / oder Puderzucker servieren.
+        </p>
+
+
+        <h3>Rezept erstellt von</h3>
+        <div class="chef">
+            <img class="profile-img" src="img/umut.jpg">
+            <span class="chef-name">UMUT</span>
+        </div>
+    </section>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

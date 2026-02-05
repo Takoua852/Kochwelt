@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasagne</title>
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="lasagne-rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML(), CreateTable()">
+    <div w3-include-html="templates/header.html"></div>
+    <!-- First Section -->
+    <section>
+
+        <h1 class="headline">Lasagne Hackfleisch</h1>
+        <img class="start-img" src="img/lasagne.jpg" alt="">
+
+
+        <div class="labels">
+            <label class="bg-label"><img src="img/icons/clock-regular.svg" alt="" width="10">
+                30 Min.</label>
+            <label class="bg-label"><img src="img/icons/brain-solid.svg" alt="" width="10">
+                normal</label>
+            <label class="bg-label"> <img src="img/icons/calendar-alt-regular.svg" alt="" width="10">
+                01.04.2023</label>
+        </div>
+
+    </section>
+
+
+    <!-- second Section -->
+    <section>
+        <hr>
+        <div class="portion-input">
+            <label class="ing-label">Zutaten für </label>
+            <input class="portion" type="number" min="1" max="20" id="input-portion" placeholder="4">
+            <button onclick="calc()">Portionen</button>
+        </div>
+        <br>
+
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+
+
+    </section>
+
+    <!-- Third Section  -->
+    <section>
+        <h2 class="h2-prep">Zubereitung</h2>
+        <div class="labels">
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                ca. 30 Minuten
+            </div>
+            <div class="bg-label">
+                <img src="img/icons/clock-regular.svg" alt="" width="15" height="15">
+                Gesamtzeit ca. 55 Minuten
+            </div>
+        </div>
+        <p>
+            Olivenöl in einer großen Pfanne oder einem Bräter erhitzen, Zwiebeln und Knoblauch für 2-3 Minuten
+            anschwitzen. Hackfleisch hinzugeben und für weitere 3-4 Minuten anbraten. Tomatenmark hinzugeben und mit
+            gründlich mit dem Hackfleisch vermischen. Karotten- und Selleriewürfel dazugeben, kurz mitbraten und mit
+            Gemüsebrühe ablöschen, kurz aufkochen. Stückige Tomaten, gezupfter Oregano
+            dazugeben. Für 15 Minuten bei geringer Hitze köcheln lassen. Mit Salz und Pfeffer abschmecken.<br>
+            <br>
+            Für die Béchamelsauce Butter in einem Topf bei mittlerer Hitze anschwitzen. Nach und nach das Mehl unter
+            Rühren hinzugeben und für ca. 2 Minuten mit anschwitzen. Die Milch unter ständigem Rühren langsam in den
+            Topf gießen. Unter Rühren köcheln lassen, bis eine glatte, gebundene Sauce entsteht. Mit Muskat, Salz und
+            Pfeffer würzen. Vom Herd nehmen.
+        </p>
+ 
+
+        <h3>Rezept erstellt von</h3>
+        <div class="chef">
+            <img class="profile-img" src="img/profil-bild.jpg" alt="">
+            <span class="chef-name">TAKOUA</span>
+        </div>
+    </section>
+
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>
